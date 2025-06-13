@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FOOD HACKER | Hacker's Delight</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://via.placeholder.com/1920x1080');
+            background-size: cover;
+            background-position: center;
+            color: black;
+        }
+
+        header nav {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        header nav .logo h1 {
+            margin-left: 20px;
+            color: white;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: right;
+            margin-right: 20px;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            color: #FF6347;
+        }
+
+        .cta-btn {
+            background-color: #FF6347;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 60px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-top: 70px;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            color: #FF6347;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .menu-section {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+        }
+
+        .menu-item {
+            margin-bottom: 20px;
+        }
+
+        .menu-item h3 {
+            color: #8B4513;
+        }
+
+        .menu-item span {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .right-section {
+            width: 300px;
+            padding: 20px;
+            background-color: rgba(245, 245, 245, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-section h3 {
+            color: #8B4513;
+        }
+
+        .right-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .right-section ul li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .right-section ul li span {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .right-section ul li:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        form label, input, textarea, button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #FF6347;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .right-section {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>FOOD HACKER</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to FOOD HACKER</h1>
+            <p>Enjoy delicious meals made with fresh ingredients!</p>
+            <a href="#menu" class="cta-btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="container">
+            <div class="menu-section">
+                <div class="menu-item">
+                    <h3>Nonveg-Biriyanis</h3>
+                    <ul>
+                        <li>Tikka biriyani <span>₹200</span></li>
+                        <li>Garlic Dum biriyani <span>₹250</span></li>
+                        <li>Fry piece biriyani <span>₹340</span></li>
+                        <li>Prawns biriyani <span>₹380</span></li>
+                        <li>Pot biriyani <span>₹350</span></li>
+                        <li>Mughalai <span>₹400</span></li>
+                        <li>Raajulu biriyani <span>₹500</span></li>
+                    </ul>
+                </div>
+                <div class="menu-item">
+                    <h3>Veg-Biriyanis</h3>
+                    <ul>
+                        <li>Paneer biriyani <span>₹200</span></li>
+                        <li>Garlic biriyani <span>₹250</span></li>
+                        <li>Cashew biriyani <span>₹340</span></li>
+                        <li>Mushroom biriyani <span>₹380</span></li>
+                        <li>Kaju Paneer biriyani <span>₹250</span></li>
+                        <li>Mixed veg biriyani <span>₹340</span></li>
+                        <li>Aavakaay biriyani <span>₹380</span></li>
+                    </ul>
+                </div>
+                <div class="menu-item">
+                    <h3>Curries</h3>
+                    <ul>
+                        <li>Kadai chicken <span>₹250</span></li>
+                        <li>Andhra chicken <span>₹300</span></li>
+                        <li>Mutton fry <span>₹380</span></li>
+                        <li>Prawns <span>₹370</span></li>
+                        <li>Appolo fish <span>₹390</span></li>
+                        <li>Crabs curry <span>₹320</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-section">
+                <h3>Starters</h3>
+                <ul>
+                    <li>Spring Rolls <span>₹150</span></li>
+                    <li>Garlic Bread <span>₹120</span></li>
+                    <li>Paneer Tikka <span>₹180</span></li>
+                    <li>French Fries <span>₹100</span></li>
+                </ul>
+
+                <h3>Soft Drinks</h3>
+                <ul>
+                    <li>Coca-Cola <span>₹50</span></li>
+                    <li>Pepsi <span>₹50</span></li>
+                    <li>7UP <span>₹50</span></li>
+                    <li>Sprite <span>₹50</span></li>
+                </ul>
+
+                <h3>Alcohol Drinks</h3>
+                <ul>
+                    <li>King Fisher <span>₹220</span></li>
+                    <li>Boom Boom <span>₹300</span></li>
+                    <li>Strom <span>₹350</span></li>
+                    <li>Elephant <span>₹400</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At FOOD HACKER, we believe in serving high-quality food that brings people together. Our chefs use the finest ingredients to create meals that are not only tasty but also memorable.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For reservations, inquiries, or feedback, please get in touch with us!</p>
+        <address>
+            <p>Phone: (+91) 98848484</p>
+            <p>Email: foodhacker@gmail.com</p>
+            <p>Address: 530047 Beach Road, Vizag, India</p>
+        </address>
+        <form action="#" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Thank you for visiting!</p>
+    </footer>
+
+</body>
+</html>
